@@ -7,8 +7,7 @@ module.exports.insertData = (req,res) =>{
         city:req.body.city
     };
     con.query("insert into studentsDetails set?", data, function(err, result) {
-        if(err) throw err;
-        console.log(err)
+        if(err)throw err;
         res.send(data)
     })
 }
