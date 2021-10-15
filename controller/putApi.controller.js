@@ -6,5 +6,6 @@ module.exports.updateData = (req,res) => {
         console.log('data updated')
         res.send(JSON.stringify(result))
     });
+    console.log(a)
 };
 
